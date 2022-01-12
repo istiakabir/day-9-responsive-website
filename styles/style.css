@@ -1,0 +1,242 @@
+    /* font */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+ /* Common Style and Utility */
+ body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+ }
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 870px;
+    background: #FFFFFF;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+/*----------------------------------------------------------------
+ header porstion -------------------------------------*/
+
+ .header{
+    width: 100%;
+    height: 90px;
+    background: #562EFF;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .logo{
+    display: flex;
+    align-items: center;
+    padding-left: 285px;
+ }
+
+ .logo img{
+    width: 40.42px;
+    height: 51px;
+ }
+
+ .logo span {
+    font-size: 24px;
+    width: 54px;
+    height: 36px;
+    color: #FFFFFF;
+    padding-left: 15.58px;
+ }
+
+ .navigation-bar{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     align-items: center;
+     padding-right: 220px;
+     
+     
+     
+ }
+
+ .navigation-bar a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 36px;
+
+ }
+
+
+
+
+/* top player item */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 30px;
+}
+
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+
+.player img{
+    width: 56px;
+    height: 56px;
+}
+
+.player-name{
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+
+/* Blog section */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+
+}
+
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+
+}
+
+/* course section */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px ;
+}
+
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star.field{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-clock{
+    width: 94.83px;
+    height: 29.38px;
+    background: #FEE5DF;
+    border-radius: 14.6913px;
+}
+
+.clock-hour, .fa-clock{
+    padding-left: 10%;
+    padding-top: 7%;
+    font-size: 14.6913px;
+    color: #FF4A60;
+    
+    
+
+}
+
+/* for mobile device */
+
+@media only screen and (max-width: 688px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .section-title{
+    text-align: center;
+    }
+
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player, .blog{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .course {
+        margin-bottom: 50px;
+    }
+
+
+
+    
+}
+
+/* for ipad device */
+
+@media only screen and (min-width:689px ) and (max-width: 991px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .section-title{
+        text-align: center;
+        }
+
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .player, .blog{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    
+}
